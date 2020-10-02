@@ -7,6 +7,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Presentacion.Productos.Res;
+using Presentacion.Productos.Pollo;
+using Presentacion.Productos.Cerdo;
+using Presentacion.Productos.Embutido;
 
 namespace Presentacion
 {
@@ -50,7 +53,17 @@ namespace Presentacion
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
+            formInicio.AbrirFormPanel(new FormPollo());
+        }
 
+        private void btnCerdo_Click(object sender, EventArgs e)
+        {
+            formInicio.AbrirFormPanel(new FormCerdo());
+        }
+
+        private void btnEmbutido_Click(object sender, EventArgs e)
+        {
+            formInicio.AbrirFormPanel(new FormEmbutido());
         }
     }
 }

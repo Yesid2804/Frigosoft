@@ -28,28 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.checkBoxPollo = new System.Windows.Forms.CheckBox();
+            this.checkBoxCerdo = new System.Windows.Forms.CheckBox();
+            this.checkBoxRes = new System.Windows.Forms.CheckBox();
+            this.txtContacto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgvProveedores = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProveedores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,19 +97,19 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Categoria";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 23);
-            this.textBox1.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(134, 44);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(136, 23);
+            this.txtNombre.TabIndex = 3;
             // 
-            // textBox2
+            // txtDireccion
             // 
-            this.textBox2.Location = new System.Drawing.Point(134, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 23);
-            this.textBox2.TabIndex = 3;
+            this.txtDireccion.Location = new System.Drawing.Point(134, 89);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(136, 23);
+            this.txtDireccion.TabIndex = 3;
             // 
             // btnAgregar
             // 
@@ -142,7 +145,7 @@
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -160,23 +163,23 @@
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.checkBoxPollo);
+            this.groupBox1.Controls.Add(this.checkBoxCerdo);
+            this.groupBox1.Controls.Add(this.checkBoxRes);
+            this.groupBox1.Controls.Add(this.txtContacto);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtNombre);
+            this.groupBox1.Controls.Add(this.txtDireccion);
             this.groupBox1.Location = new System.Drawing.Point(685, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(352, 290);
@@ -184,42 +187,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " ";
             // 
-            // checkBox3
+            // checkBoxPollo
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(248, 137);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(53, 19);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "Pollo";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBoxPollo.AutoSize = true;
+            this.checkBoxPollo.Location = new System.Drawing.Point(248, 137);
+            this.checkBoxPollo.Name = "checkBoxPollo";
+            this.checkBoxPollo.Size = new System.Drawing.Size(53, 19);
+            this.checkBoxPollo.TabIndex = 5;
+            this.checkBoxPollo.Text = "Pollo";
+            this.checkBoxPollo.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkBoxCerdo
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(184, 137);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(58, 19);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Cerdo";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxCerdo.AutoSize = true;
+            this.checkBoxCerdo.Location = new System.Drawing.Point(184, 137);
+            this.checkBoxCerdo.Name = "checkBoxCerdo";
+            this.checkBoxCerdo.Size = new System.Drawing.Size(58, 19);
+            this.checkBoxCerdo.TabIndex = 4;
+            this.checkBoxCerdo.Text = "Cerdo";
+            this.checkBoxCerdo.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // checkBoxRes
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(134, 137);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(44, 19);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Res";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxRes.AutoSize = true;
+            this.checkBoxRes.Location = new System.Drawing.Point(134, 137);
+            this.checkBoxRes.Name = "checkBoxRes";
+            this.checkBoxRes.Size = new System.Drawing.Size(44, 19);
+            this.checkBoxRes.TabIndex = 4;
+            this.checkBoxRes.Text = "Res";
+            this.checkBoxRes.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtContacto
             // 
-            this.textBox3.Location = new System.Drawing.Point(134, 173);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 23);
-            this.textBox3.TabIndex = 3;
+            this.txtContacto.Location = new System.Drawing.Point(134, 173);
+            this.txtContacto.Name = "txtContacto";
+            this.txtContacto.Size = new System.Drawing.Size(136, 23);
+            this.txtContacto.TabIndex = 3;
             // 
             // label6
             // 
@@ -246,6 +249,7 @@
             // 
             this.nombre.HeaderText = "Nombre";
             this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
             this.nombre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.nombre.Width = 150;
             // 
@@ -253,6 +257,7 @@
             // 
             this.direccion.HeaderText = "Direccion";
             this.direccion.Name = "direccion";
+            this.direccion.ReadOnly = true;
             this.direccion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.direccion.Width = 140;
             // 
@@ -260,6 +265,7 @@
             // 
             this.Categoria.HeaderText = "Categoria";
             this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
             this.Categoria.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Categoria.Width = 140;
             // 
@@ -267,6 +273,7 @@
             // 
             this.contacto.HeaderText = "Contacto";
             this.contacto.Name = "contacto";
+            this.contacto.ReadOnly = true;
             this.contacto.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.contacto.Width = 140;
             // 
@@ -285,6 +292,7 @@
             this.dtgvProveedores.Size = new System.Drawing.Size(615, 227);
             this.dtgvProveedores.TabIndex = 1;
             this.dtgvProveedores.Text = "dataGridView1";
+            this.dtgvProveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProveedores_CellClick);
             // 
             // FormProveedores
             // 
@@ -303,6 +311,7 @@
             this.Load += new System.EventHandler(this.FormProveedores_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProveedores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -316,7 +325,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEditar;
@@ -325,9 +334,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxPollo;
+        private System.Windows.Forms.CheckBox checkBoxCerdo;
+        private System.Windows.Forms.CheckBox checkBoxRes;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtContacto;
+        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;

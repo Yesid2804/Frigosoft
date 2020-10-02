@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductos));
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnCerdo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.btnPollo = new System.Windows.Forms.PictureBox();
+            this.btnEmbutido = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerdo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPollo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEmbutido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,16 +54,17 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox7
+            // btnCerdo
             // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(552, 155);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(196, 201);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
+            this.btnCerdo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerdo.Image = ((System.Drawing.Image)(resources.GetObject("btnCerdo.Image")));
+            this.btnCerdo.Location = new System.Drawing.Point(552, 155);
+            this.btnCerdo.Name = "btnCerdo";
+            this.btnCerdo.Size = new System.Drawing.Size(196, 201);
+            this.btnCerdo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerdo.TabIndex = 1;
+            this.btnCerdo.TabStop = false;
+            this.btnCerdo.Click += new System.EventHandler(this.btnCerdo_Click);
             // 
             // label2
             // 
@@ -77,28 +78,29 @@
             this.label2.Text = "PRODUCTOS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox8
+            // btnPollo
             // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(287, 155);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(206, 201);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.btnPollo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPollo.Image = ((System.Drawing.Image)(resources.GetObject("btnPollo.Image")));
+            this.btnPollo.Location = new System.Drawing.Point(287, 155);
+            this.btnPollo.Name = "btnPollo";
+            this.btnPollo.Size = new System.Drawing.Size(206, 201);
+            this.btnPollo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnPollo.TabIndex = 1;
+            this.btnPollo.TabStop = false;
+            this.btnPollo.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
-            // pictureBox9
+            // btnEmbutido
             // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(809, 155);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(196, 201);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
+            this.btnEmbutido.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEmbutido.Image = ((System.Drawing.Image)(resources.GetObject("btnEmbutido.Image")));
+            this.btnEmbutido.Location = new System.Drawing.Point(809, 155);
+            this.btnEmbutido.Name = "btnEmbutido";
+            this.btnEmbutido.Size = new System.Drawing.Size(196, 201);
+            this.btnEmbutido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnEmbutido.TabIndex = 1;
+            this.btnEmbutido.TabStop = false;
+            this.btnEmbutido.Click += new System.EventHandler(this.btnEmbutido_Click);
             // 
             // pictureBox1
             // 
@@ -121,10 +123,10 @@
             this.ClientSize = new System.Drawing.Size(1058, 600);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.btnEmbutido);
+            this.Controls.Add(this.btnPollo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.btnCerdo);
             this.Controls.Add(this.pictureBox5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormProductos";
@@ -132,9 +134,9 @@
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.FormProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerdo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPollo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEmbutido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -144,10 +146,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox btnCerdo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox btnPollo;
+        private System.Windows.Forms.PictureBox btnEmbutido;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

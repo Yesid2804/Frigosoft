@@ -30,11 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-<<<<<<< Updated upstream
             this.comboxFiltroFechas = new System.Windows.Forms.ComboBox();
-=======
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
->>>>>>> Stashed changes
             this.label2 = new System.Windows.Forms.Label();
             this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,11 +56,7 @@
             // groupBox1
             // 
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-<<<<<<< Updated upstream
             this.groupBox1.Controls.Add(this.comboxFiltroFechas);
-=======
-            this.groupBox1.Controls.Add(this.comboBox1);
->>>>>>> Stashed changes
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(63, 70);
             this.groupBox1.Name = "groupBox1";
@@ -72,7 +64,6 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-<<<<<<< Updated upstream
             // comboxFiltroFechas
             // 
             this.comboxFiltroFechas.FormattingEnabled = true;
@@ -85,20 +76,6 @@
             this.comboxFiltroFechas.Size = new System.Drawing.Size(130, 23);
             this.comboxFiltroFechas.TabIndex = 1;
             this.comboxFiltroFechas.Text = "Semana";
-=======
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Dia",
-            "Semana",
-            "Mes",
-            "Año"});
-            this.comboBox1.Location = new System.Drawing.Point(88, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 23);
-            this.comboBox1.TabIndex = 1;
->>>>>>> Stashed changes
             // 
             // label2
             // 
@@ -150,7 +127,6 @@
             this.columnsFecha.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.columnsFecha.Width = 120;
             // 
-<<<<<<< Updated upstream
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -166,15 +142,11 @@
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.Text = "dataGridView1";
             // 
-=======
->>>>>>> Stashed changes
             // FormReporteCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 600);
-<<<<<<< Updated upstream
-=======
             // 
             // dataGridView1
             // 
@@ -190,7 +162,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(643, 312);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.Text = "dataGridView1";
->>>>>>> Stashed changes
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -209,11 +180,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-<<<<<<< Updated upstream
         private System.Windows.Forms.ComboBox comboxFiltroFechas;
-=======
         private System.Windows.Forms.ComboBox comboBox1;
->>>>>>> Stashed changes
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnProveedor;

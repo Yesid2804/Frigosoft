@@ -45,14 +45,12 @@
             this.txtContacto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgvProveedores = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProveedores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -311,7 +309,6 @@
             this.Load += new System.EventHandler(this.FormProveedores_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProveedores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -339,10 +336,6 @@
         private System.Windows.Forms.CheckBox checkBoxRes;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtContacto;
-<<<<<<< Updated upstream
-=======
-        private System.Windows.Forms.BindingSource bindingSource1;
->>>>>>> Stashed changes
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;

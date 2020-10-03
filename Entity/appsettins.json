@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "servidor = localhost; puerto = 3306; base de datos = frigosoft; usuario = root; contraseña = "
+  }
+}

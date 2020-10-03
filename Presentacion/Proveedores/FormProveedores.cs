@@ -5,6 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using BLL.Proveedores;
+using Entity;
+using Microsoft.VisualBasic;
 
 namespace Presentacion
 {
@@ -80,6 +83,19 @@ namespace Presentacion
             {
                 dtgvProveedores.Rows[n].Cells[2].Value = "Cerdo,Pollo";
             }
+
+            Proveedor proveedor = new Proveedor(txtNombre.Text);
+
+            ControladorProveedor controlador = new ControladorProveedor();
+            if (controlador.addProveedor(proveedor))
+            {
+                MessageBox.Show("Proveedor guardado");
+            }
+            else
+            {
+                MessageBox.Show("Error al guardar");
+            }
+
         }
 
         private void FormProveedores_Load(object sender, EventArgs e)

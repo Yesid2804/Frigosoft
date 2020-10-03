@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{DE103C51-AF6E-4A9A-A974-6AA9AB7E382E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentacion", "Presentacion\Presentacion.csproj", "{DE103C51-AF6E-4A9A-A974-6AA9AB7E382E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2324CC2E-7FB5-43B4-863E-6A85CFDC0B98} = {2324CC2E-7FB5-43B4-863E-6A85CFDC0B98}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{84CE5723-A16F-46B5-B07E-01591630EC21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{84CE5723-A16F-46B5-B07E-01591630EC21}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2324CC2E-7FB5-43B4-863E-6A85CFDC0B98} = {2324CC2E-7FB5-43B4-863E-6A85CFDC0B98}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{19EC4C2D-7E13-4ED4-A2C3-6BAA2A4DE426}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{19EC4C2D-7E13-4ED4-A2C3-6BAA2A4DE426}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{2324CC2E-7FB5-43B4-863E-6A85CFDC0B98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entity\Entity.csproj", "{2324CC2E-7FB5-43B4-863E-6A85CFDC0B98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

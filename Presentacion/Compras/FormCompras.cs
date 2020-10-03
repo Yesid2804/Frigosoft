@@ -13,6 +13,17 @@ namespace Presentacion.Compras
         public FormCompras()
         {
             InitializeComponent();
+            
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -10,9 +10,24 @@ namespace Presentacion.Productos.Pollo
 {
     public partial class FormPollo : Form
     {
-        public FormPollo()
+        private Inicio formInicio;
+        private FormProductos formProducto;
+
+        public FormPollo(object inicio, object productos)
         {
+            this.formInicio = (Inicio)inicio;
+            this.formProducto = (FormProductos)productos;
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            formInicio.AbrirFormPanel(this.formProducto);
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

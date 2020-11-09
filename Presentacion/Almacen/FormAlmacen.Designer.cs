@@ -39,6 +39,15 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnLote1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnLote2 = new System.Windows.Forms.Panel();
+            this.btnLote3 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnLote1.SuspendLayout();
+            this.btnLote2.SuspendLayout();
+            this.btnLote3.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -126,7 +135,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(471, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 23);
@@ -134,16 +143,89 @@
             this.label1.Text = "ALMACEN";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(70, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 24);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Lote 1";
+            // 
+            // btnLote1
+            // 
+            this.btnLote1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnLote1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnLote1.Controls.Add(this.label5);
+            this.btnLote1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLote1.Location = new System.Drawing.Point(141, 125);
+            this.btnLote1.Name = "btnLote1";
+            this.btnLote1.Size = new System.Drawing.Size(205, 109);
+            this.btnLote1.TabIndex = 4;
+            this.btnLote1.Paint += new System.Windows.Forms.PaintEventHandler(this.btnLote1_Paint);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(70, 17);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 24);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Lote 2";
+            // 
+            // btnLote2
+            // 
+            this.btnLote2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnLote2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnLote2.Controls.Add(this.label8);
+            this.btnLote2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLote2.Location = new System.Drawing.Point(429, 125);
+            this.btnLote2.Name = "btnLote2";
+            this.btnLote2.Size = new System.Drawing.Size(205, 109);
+            this.btnLote2.TabIndex = 4;
+            // 
+            // btnLote3
+            // 
+            this.btnLote3.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnLote3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnLote3.Controls.Add(this.label11);
+            this.btnLote3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLote3.Location = new System.Drawing.Point(713, 125);
+            this.btnLote3.Name = "btnLote3";
+            this.btnLote3.Size = new System.Drawing.Size(205, 109);
+            this.btnLote3.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(70, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(73, 24);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Lote 3";
+            // 
             // FormAlmacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.ClientSize = new System.Drawing.Size(1049, 600);
+            this.Controls.Add(this.btnLote3);
+            this.Controls.Add(this.btnLote2);
+            this.Controls.Add(this.btnLote1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAlmacen";
             this.Text = "FormAlmacen";
+            this.btnLote1.ResumeLayout(false);
+            this.btnLote1.PerformLayout();
+            this.btnLote2.ResumeLayout(false);
+            this.btnLote2.PerformLayout();
+            this.btnLote3.ResumeLayout(false);
+            this.btnLote3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +244,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel btnLote1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel btnLote2;
+        private System.Windows.Forms.Panel btnLote3;
+        private System.Windows.Forms.Label label11;
     }
 }

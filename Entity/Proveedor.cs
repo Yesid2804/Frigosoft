@@ -8,9 +8,12 @@ namespace Entity
     {
         public int Id { get; set; }
         public string nombre { get; set; }
-        public Proveedor(String nombre)
+        public string contacto{ get; set; }
+
+        public Proveedor(string nombre, string contacto)
         {
             this.nombre = nombre;
+            this.contacto=contacto;
         }
     }
 }

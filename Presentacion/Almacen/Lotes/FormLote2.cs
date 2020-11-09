@@ -6,18 +6,13 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Presentacion.Reportes
+namespace Presentacion.Almacen.Lotes
 {
-    public partial class FormReporteVentas : Form
+    public partial class FormLote2 : Form
     {
-        public FormReporteVentas()
+        public FormLote2()
         {
             InitializeComponent();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

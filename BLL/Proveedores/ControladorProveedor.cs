@@ -16,6 +16,7 @@ namespace BLL.Proveedores
                     // Creates the database if not exists
                     context.Database.EnsureCreated();
                     context.Proveedores.Add(proveedor);
+                    context.SaveChanges();
                     return true;
                 }
                 catch (Exception)

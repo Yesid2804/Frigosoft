@@ -16,19 +16,17 @@ namespace Presentacion
     public partial class FormProductos : Form
     {
         private  Inicio formInicio;
+
         public FormProductos(object inicio)
         {
             this.formInicio = (Inicio) inicio;
-            this.UseWaitCursor = false;
             InitializeComponent();
-            this.UseWaitCursor = false;
         }
 
         public FormProductos()
         {
             InitializeComponent();
         }
-
 
         private void iconCerrar_Click(object sender, EventArgs e)
         {
@@ -39,10 +37,9 @@ namespace Presentacion
         {
 
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            formInicio.AbrirFormPanel(new FormRes());
+            formInicio.AbrirFormPanel(new FormRes(this.formInicio, this));
         }
 
 
@@ -53,17 +50,17 @@ namespace Presentacion
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            formInicio.AbrirFormPanel(new FormPollo());
+            formInicio.AbrirFormPanel(new FormPollo(this.formInicio, this));
         }
 
         private void btnCerdo_Click(object sender, EventArgs e)
         {
-            formInicio.AbrirFormPanel(new FormCerdo());
+            formInicio.AbrirFormPanel(new FormCerdo(this.formInicio, this));
         }
 
         private void btnEmbutido_Click(object sender, EventArgs e)
         {
-            formInicio.AbrirFormPanel(new FormEmbutido());
+            formInicio.AbrirFormPanel(new FormEmbutido(this.formInicio, this));
         }
     }
 }

@@ -54,7 +54,6 @@ namespace Presentacion
                 checkBoxRes.Checked = false;
                 checkBoxCerdo.Checked = false;
                 checkBoxPollo.Checked = false;
-
             }
 
 
@@ -84,17 +83,17 @@ namespace Presentacion
                 dtgvProveedores.Rows[n].Cells[2].Value = "Cerdo,Pollo";
             }
 
-            Proveedor proveedor = new Proveedor(txtNombre.Text);
+            //Proveedor proveedor = new Proveedor(txtNombre.Text, txtContacto.Text);
 
-            ControladorProveedor controlador = new ControladorProveedor();
-            if (controlador.addProveedor(proveedor))
-            {
-                MessageBox.Show("Proveedor guardado");
-            }
-            else
-            {
-                MessageBox.Show("Error al guardar");
-            }
+            //ControladorProveedor controlador = new ControladorProveedor();
+            //if (controlador.addProveedor(proveedor))
+            //{
+            //    MessageBox.Show("Proveedor guardado");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Error al guardar");
+            //}
 
         }
 
@@ -111,8 +110,31 @@ namespace Presentacion
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-
+          
         }
+
+        private void txtContacto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
         private void dtgvProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             n = e.RowIndex;

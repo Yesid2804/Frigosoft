@@ -6,16 +6,16 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Presentacion.Reportes
+namespace Presentacion.Almacen.Lotes
 {
-    public partial class FormReporteVentas : Form
+    public partial class FormLote1 : Form
     {
-        public FormReporteVentas()
+        public FormLote1()
         {
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

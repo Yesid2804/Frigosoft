@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +49,8 @@
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgvProveedores = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProveedores)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +102,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(136, 23);
             this.txtNombre.TabIndex = 3;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtDireccion
             // 
@@ -136,7 +138,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEditar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnEditar.ImageKey = "(ninguna)";
-            this.btnEditar.Location = new System.Drawing.Point(41, 284);
+            this.btnEditar.Location = new System.Drawing.Point(41, 328);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(92, 24);
             this.btnEditar.TabIndex = 3;
@@ -154,7 +156,7 @@
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnEliminar.ImageKey = "(ninguna)";
-            this.btnEliminar.Location = new System.Drawing.Point(139, 284);
+            this.btnEliminar.Location = new System.Drawing.Point(139, 328);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(92, 24);
             this.btnEliminar.TabIndex = 3;
@@ -178,7 +180,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.txtDireccion);
-            this.groupBox1.Location = new System.Drawing.Point(685, 51);
+            this.groupBox1.Location = new System.Drawing.Point(685, 95);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(352, 290);
             this.groupBox1.TabIndex = 4;
@@ -221,14 +223,15 @@
             this.txtContacto.Name = "txtContacto";
             this.txtContacto.Size = new System.Drawing.Size(136, 23);
             this.txtContacto.TabIndex = 3;
+            this.txtContacto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContacto_KeyPress);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(155, 10);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(144, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 17);
+            this.label6.Size = new System.Drawing.Size(98, 18);
             this.label6.TabIndex = 2;
             this.label6.Text = "PROVEEDOR";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -285,12 +288,29 @@
             this.direccion,
             this.Categoria,
             this.contacto});
-            this.dtgvProveedores.Location = new System.Drawing.Point(41, 51);
+            this.dtgvProveedores.Location = new System.Drawing.Point(41, 95);
             this.dtgvProveedores.Name = "dtgvProveedores";
             this.dtgvProveedores.Size = new System.Drawing.Size(615, 227);
             this.dtgvProveedores.TabIndex = 1;
             this.dtgvProveedores.Text = "dataGridView1";
             this.dtgvProveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProveedores_CellClick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(41, 66);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 17);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Buscar por:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(126, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(129, 23);
+            this.textBox1.TabIndex = 6;
             // 
             // FormProveedores
             // 
@@ -298,6 +318,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1049, 600);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
@@ -340,5 +362,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
         private System.Windows.Forms.DataGridViewTextBoxColumn contacto;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

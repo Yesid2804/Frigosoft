@@ -70,10 +70,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(465, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 28);
+            this.label2.Size = new System.Drawing.Size(130, 28);
             this.label2.TabIndex = 0;
             this.label2.Text = "PRODUCTOS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;

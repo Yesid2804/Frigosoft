@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Presentacion.Almacen.Lotes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,13 @@ namespace Presentacion.Almacen
 {
     public partial class FormAlmacen : Form
     {
+        private Inicio formInicio;
+        public FormAlmacen(object inicio)
+        {
+            this.formInicio = (Inicio)inicio;
+            InitializeComponent();
+        }
+
         public FormAlmacen()
         {
             InitializeComponent();
@@ -18,6 +26,10 @@ namespace Presentacion.Almacen
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLote1_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }
